@@ -1,0 +1,38 @@
+//== Styles
+@import "@/styles/variables.scss";
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url("/fonts/Vazirmatn.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: SofiaSans;
+  src: url("/fonts/SofiaSans.ttf");
+  font-display: swap;
+}
+body {
+  font-family: SofiaSans;
+  background-color: var(--main-background);
+  color: var(--text-color);
+  &.light {
+    --text-color: #131313;
+    --pale-text-color: #ABABAB;
+    --main-background: #f2f2f2;
+  }
+
+  &.dark {
+    --text-color: #fff;
+    --pale-text-color: #ABABAB;
+    --main-background: #171717;
+  }
+}
+#en {
+  text-align: left;
+  direction: ltr;
+}
+#ar {
+  text-align: right;
+  direction: rtl;
+}
